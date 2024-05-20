@@ -1,0 +1,602 @@
+/*Font Awesome Light Icons*/
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/light.css");
+
+/* Increase size of Jellyfin logo */
+.layout-desktop .pageTitleWithLogo {
+    margin-left: 15px !important;
+    height: 40px !important;
+    margin-top: 5px !important;
+}
+
+
+
+/* Static left drawer */
+.layout-desktop .mainDrawer {
+    transform: none !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 250px !important;
+    /* Modified background color */
+    background-color: transparent !important;
+    /* Move drawer behind header */
+    z-index: 998 !important;
+}
+/* Lower drawer buttons */
+.layout-desktop .mainDrawer-scrollContainer {
+    margin-top: 95px !important;
+}
+.layout-mobile .mainDrawer-scrollContainer {
+    margin-top: 20px !important;
+}
+
+/* Shift content to the right */
+/*.layout-desktop .libraryPage:not(#quickConnectPreferencesPage, #editItemMetadataPage) {
+    margin-left: 250px !important;
+}*/
+.layout-desktop .libraryPage:not(#editItemMetadataPage) {
+    margin-left: 250px !important;
+}
+
+/* Hide transition on page load */
+.layout-desktop .touch-menu-la.transition {
+    transition: none !important;
+}
+/* Hide hamburger button */
+.layout-desktop .mainDrawerButton {
+    display: none !important;
+}
+/* Fix for dashboard drawer button height */
+.layout-desktop .dashboardDocument .mainDrawer-scrollContainer {
+    padding-top: 0 !important;
+}
+/* Hide home button */
+.layout-desktop .headerHomeButton {
+    display: none !important;
+}
+.layout-desktop .dashboardDocument .headerHomeButton {
+    display: block !important;
+}
+/* Fix for video player and login page */
+.layout-desktop .hide-scroll .mainDrawer,
+.layout-desktop .hideMainDrawer .mainDrawer {
+    left: -320px !important;
+}
+/* Fix for scroll menus on home page */
+.emby-scroller {
+    margin-right: -2% !important;
+}
+
+
+
+/* Rounded cards */
+.cardContent,
+.cardPadder,
+.cardOverlayContainer,
+.blurhash-canvas,
+.dialog {
+    border-radius: 10px !important;
+}
+
+
+
+/* Floating progress bar */
+.innerCardFooter {
+    bottom: 5% !important;
+    width: 90% !important;
+    margin: auto !important;
+    border-radius: 100px !important;
+}
+.itemProgressBar {
+    height: 8px !important;
+}
+.innerCardFooterClear {
+    background-color: black !important;
+}
+
+
+
+/* Green watched indicator */
+.playedIndicator {
+    background: #409843 !important;
+}
+
+
+
+/* Rounded left drawer buttons */
+.navMenuOption,
+.navMenuOption:hover,
+.navMenuOption-selected {
+    border-radius: 100px !important;
+    width: 85% !important;
+    margin: auto !important;
+    text-align: center !important;
+    height: 45px !important;
+}
+.navMenuOption:hover:not(.navMenuOption-selected) {
+    background-color: rgba(44, 44, 44, 0.7);
+}
+/* Center icons and text and shift to the left */
+.navMenuOptionIcon,
+.navMenuOptionText {
+    position: inherit !important;
+    left: -10% !important;
+    margin-top: 0 !important;
+}
+/* Fix for header buttons */
+.layout-desktop .emby-button-foreground {
+    top: -9px !important;
+}
+
+
+
+/* Custom button color */
+.navMenuOption-selected {
+    background: rgba(33, 149, 243, 0.2) !important;
+    color: rgb(33, 149, 243) !important;
+    backdrop-filter: blur(50px) !important;
+}
+
+
+
+/* Transparent header bar */
+.skinHeader {
+    background-color: transparent !important;
+}
+.layout-desktop .skinHeader {
+    padding-top: 1.5em !important;
+}
+/* Rounded header buttons */
+.headerTabs,
+.headerRight {
+    background-color:rgba(35, 35, 35, 0.5) !important;
+    border-radius: 50px !important;
+    backdrop-filter: blur(50px) !important;
+}
+.layout-desktop .headerTabs,
+.layout-desktop .headerRight {
+    margin-left: 250px !important;
+    margin-bottom: 10px !important;
+}
+/* Button height */
+.headerRight,
+.emby-tab-button {
+    height: 45px !important;
+}
+/* Lower header and add padding to right buttons */
+.layout-desktop .headerRight {
+    padding: 0px 5px !important;
+}
+/* Move left header back up */
+.layout-desktop .headerLeft {
+    position: relative !important;
+    top: -17px !important;
+}
+/* Mobile fixes */
+.layout-mobile .headroom--unpinned {
+    transform: translateY(-50%);
+}
+.layout-mobile .sectionTabs {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: auto !important;
+}
+.layout-mobile .emby-button-foreground {
+    top: -2px !important;
+}
+
+
+
+/* Settings and dashboard modifications */
+.emby-input,
+.emby-textarea,
+.paperList,
+.listItem:hover,
+.subtitleappearance-preview {
+    border-radius: 15px !important;
+}
+.button-submit,
+.emby-select,
+.checkboxOutline,
+.btnRefresh,
+#btnShutdown,
+.raised {
+    border-radius: 100px !important;
+}
+/* Modify username placement on profile page */
+.layout-desktop #userProfilePage .readOnlyContent div:not([class]), div[class=""]{
+    align-items: initial !important;
+}
+.layout-desktop .username {
+    margin: 0px 0px 10px 10px !important;
+}
+/* Red shutdown button */
+#btnShutdown {
+    background: #AE3739 !important;
+}
+/* Remove border under certain dashboard items */
+.listItem-border {
+    border: 0 !important;
+}
+/* Add padding to list items */
+.layout-desktop .listItem {
+    padding-left: 15px !important;
+}
+/* Rounded dashboard cards */
+.cardBox {
+    border-radius: 15px !important;
+}
+/* Removed ugliness of border-card styling */
+.layout-desktop fieldset.verticalSection-extrabottompadding {
+    border-radius: 15px !important;
+    border-color: #3B3B3B !important;
+    padding: 10px 35px !important;
+}
+
+
+
+/* Metadata editor fixes */
+/*.editPageSidebar {
+    margin-left: 250px !important;
+    width: 20% !important;
+} */
+
+.editPageSidebar:not(.editPageSidebar) {
+    margin-left: 250px !important;
+    width: 20% !important;
+}
+
+/*.layout-desktop #editItemMetadataPage {
+    margin-left: 215px !important;
+}*/
+.jstree-default-large .jstree-node {
+    line-height: 35px !important;
+}
+.jstree-default .jstree-wholerow-clicked {
+    background: rgba(33, 149, 243, 0.2) !important;
+}
+.jstree-wholerow-hovered {
+    background: rgba(35, 35, 35, 0.5) !important;
+}
+.jstree-children {
+    margin-left: -10px !important;
+}
+#editItemMetadataPage .btnHeaderSave {
+    background: #00A4DC !important;
+    border-radius: 100px !important;
+    height: 40px !important;
+    color: white !important;
+}
+
+
+
+/* Remove show/movie image on details page */
+.layout-desktop .detailImageContainer {
+    /*display: none !important;*/
+}
+
+/* Re-position content on details page */
+.layout-desktop .detailSection {
+    /*margin-right: 0 !important;*/
+}
+.layout-desktop .detailPageContent {
+    /*padding-left: 4% !important;*/
+}
+
+/* Re-position logo */
+.layout-desktop .detailLogo {
+    /*right: 0 !important;
+    left: 4% !important;
+    top: 14vh !important;*/
+}
+
+/* Transparent ribbon bar */
+.detailRibbon {
+    background: transparent !important;
+}
+
+/* Add card around top-right buttons */
+.layout-desktop .mainDetailButtons {
+    background: rgba(35, 35, 35, 0.5) !important;
+    border-radius: 100px !important;
+    backdrop-filter: blur(10px) !important;
+}
+.layout-mobile .mainDetailButtons {
+    background: #181818 !important;
+    border-radius: 100px !important;
+}
+
+/* Add card around groups section */
+.layout-desktop .detailsGroupItem {
+    background: rgba(35, 35, 35, 0.5) !important;
+    padding: 10px 20px !important;
+    border-radius: 100px !important;
+    width: fit-content !important;
+    max-width: max-content !important;
+    backdrop-filter: blur(40px) !important;
+}
+
+/* Fix for groups section card */
+.layout-desktop .content.focuscontainer-x {
+    white-space: nowrap !important;
+    padding-right: 48px !important;
+}
+
+/* Alternative mobile group section card */
+.layout-mobile .itemDetailsGroup {
+    background: #181818 !important;
+    padding: 15px 20px 5px 20px !important;
+    border-radius: 15px !important;
+}
+
+/* Add card around description */
+.layout-desktop .detailSectionContent {
+    background: rgba(35, 35, 35, 0.5) !important;
+    border-radius: 15px !important;
+    padding: 40px 20px 10px 20px !important;
+    margin-top: 50px !important;
+    backdrop-filter: blur(40px) !important;
+}
+.layout-mobile .detailSectionContent {
+    background: #181818 !important;
+    border-radius: 15px !important;
+    padding: 10px 20px !important;
+}
+
+/* Add card around track selection */
+.layout-desktop .trackSelections {
+    background: rgba(35, 35, 35, 0.5) !important;
+    border-radius: 15px !important;
+    padding: 10px 20px !important;
+    margin-top: 20px !important;
+    backdrop-filter: blur(40px) !important;
+}
+.layout-mobile .trackSelections {
+    background: #181818 !important;
+    border-radius: 15px !important;
+    padding: 10px 20px !important;
+    margin-top: 20px !important;
+}
+
+/* Re-position title */
+.layout-desktop .infoWrapper {
+    margin-top: 245px !important;
+}
+.layout-desktop .detailPagePrimaryContainer {
+    padding-left: 4% !important;
+}
+.layout-desktop .nameContainer {
+    /*position: absolute !important;*/
+    margin-top: -55px !important;
+    margin-left: 20px !important;
+}
+.layout-desktop .itemMiscInfo {
+    position: absolute !important;
+    margin-left: 21px !important;
+    margin-top: 16px !important;
+}
+
+/* Move track selection box */
+.detailSection {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+.detailSection .detailSectionContent {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+}
+.detailSection .recordingFields {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+.detailSection .trackSelections {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+}
+.detailSection .itemDetailsGroup {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    box-ordinal-group: 4;
+}
+/* Fix for backdrops */
+.layout-desktop #itemBackdrop {
+    /*display: none !important;*/
+}
+.layout-desktop .detailPageWrapperContainer {
+    padding-top: 20% !important;
+}
+/* Move episode title */
+.layout-desktop .nameContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+}
+.layout-desktop .nameContainer .parentName {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+}
+.layout-desktop .nameContainer .itemName {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    /*margin: 0.45em 0 0 0 !important;*/
+}
+
+
+
+/* Live TV */
+/* Modified background color of active guide cells */
+.programCell-active {
+    background: #181818 !important;
+}
+/* Translucent buttons */
+.raised.emby-button:not(.button-submit) {
+    background: rgba(35, 35, 35, 0.5) !important;
+    backdrop-filter: blur(40px) !important;
+}
+/* Repositioned record button */
+.recordingFields {
+    margin: 5px 0 -7px 0 !important;
+}
+.recordingButton {
+    height: 40px !important;
+}
+.recordingIcon {
+    color: red !important;
+}
+/* Remove overlapping text */
+.itemMiscInfo.itemMiscInfo-secondary {
+    margin-left: 65px !important;
+}
+
+
+
+/* Player modifications */
+.upNextContainer, .toastVisible, .sliderBubble {
+    backdrop-filter: blur(50px) !important;
+}
+.upNextContainer {
+    border-radius: 15px !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.toastVisible {
+    border-radius: 30px !important;
+    background-color: rgba(35, 35, 35, 0.5) !important;
+}
+.sliderBubble {
+    border-radius: 15px !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    height: 55px !important
+}
+/* Support for Jellyscrub plugin */
+.chapterThumbContainer {
+    margin-bottom: 135px !important;
+    border-radius: 15px !important;
+}
+
+
+
+/* Fix for scaling issues */
+@media (width: 1600px) {
+    .layout-desktop .headerRight {
+        margin-bottom: 0 !important;
+    }
+    .layout-desktop .emby-button-foreground {
+        top: -4px !important;
+    }
+}
+@media (max-width: 1599px) {
+    .layout-desktop .pageTitleWithLogo {
+        margin-left: 25px !important;
+    }
+    .layout-desktop .headerTabs {
+        margin-top: -65px !important;
+    }
+    .layout-desktop .headerRight {
+        margin-right: 15px !important;
+    }
+    .layout-desktop .sectionTabs {
+        width: auto !important;
+        align-self: center !important;
+    }
+    .layout-desktop .emby-button-foreground {
+        top: -2px !important;
+    }
+}
+#loginPage {
+  background: url('https://soduto.noton.tk/assets/Low%20Poly%20Grid.svg');
+  background-size: cover;
+}
+.emby-button, .checkboxOutline {
+  border-radius: 20em;
+}
+.btnManual, .button-submit {
+  background-color: #07528f !important;
+}
+.btnForgotPassword {
+  background-color: #F56476 !important;
+}
+.btnQuick {
+  background-color: #415A69 !important;
+}
+.button-link {
+  color: #07528f !important;
+}
+.cardContent {
+  border-radius: 2em;
+}
+.cardBox:not(.visualCardBox) .cardPadder {
+  border-radius: 2em;
+}
+.skinHeader.semiTransparent {
+  background-color: rgba(0, 0, 0, 0) !important;
+  min-height: 5em;
+}
+.pageTitle {
+  margin: 0 0 0 1.7em;
+  height: 2em;
+}
+.standalonePage {
+  padding-top: 8em !important;
+}
+.checkboxIcon {
+  color: #fff;
+}
+.emby-checkbox:checked + span + .checkboxOutline {
+  background-color: #07528f!important;
+  border-color: #07528f!important;
+}
+.emby-input, .emby-textarea {
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+.emby-input {
+  padding: 0.7em 1.2em; !important
+}
+.trackSelections .selectContainer .detailTrackSelect {
+  padding: 0 0.7em; !important
+}
+/* Make count indicator icon dark and transparent */
+.countIndicator {
+  background: #07528f;
+}
+.cardOverlayFab-primary {
+  font-size: 60%;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.layout-desktop .detailPageWrapperContainer {
+  padding-top: 0% !important;
+}
+.listItemImageButton {
+  font-size: 1em;
+  width: 3.5em;
+  height: 3.5em;
+}
+.layout-desktop .detailImageContainer .card {
+  width: 12vw;
+  top: 50%;
+}
+.layout-desktop .detailPagePrimaryContainer, .layout-desktop .detailPageContent {
+  padding-left: 20% !important;
+}
+.cardImageContainer.emby-button {
+  border-radius: 0 !important;
+}
+
+/* For MAL-Sync */
+/*#malp {
+  margin-block: 2rem;
+  padding-inline: 2rem;
+}*/
