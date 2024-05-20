@@ -1,0 +1,40 @@
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_grid.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
+
+/*Style backdrop*/
+.backdropImage {filter: blur(18px) saturate(120%) contrast(120%) brightness(30%);}
+
+/*Login background*/
+#loginPage {
+  display: grid;
+  background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15') !important;
+  background-position: center;
+  background-size: cover;
+}
+.skinHeader.semiTransparent { background-color: unset; }
+.pageTitle { height: 2.5em; }
+.headerTop { padding: 1em 0.5em; }
+#loginPage .padded-left.padded-right.padded-bottom-page { margin-top: auto;}
+#loginPage > .padded-bottom-page { padding-bottom: 0 !important; }
+.trackSelections .selectContainer .detailTrackSelect { padding: 0.5em 1.9em 0.5em 0.5em; }
+.emby-select[disabled] { padding: 0em 0.5em !important; }
+.listItemImageButton.itemAction.paper-icon-button-light { background: transparent; color: transparent; }
+
+/*Accent and roundingd*/
+:root {--accent: 98, 121, 205;}
+:root {--rounding: 12px;}
+.css-17c09up.Mui-selected { background-color: rgba(81, 101, 170, 0.2); }
+.css-17c09up.Mui-selected:hover { background-color: rgba(81, 101, 170, 0.7); }
