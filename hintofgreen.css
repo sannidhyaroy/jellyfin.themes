@@ -1,0 +1,37 @@
+@import url('https://looi-wh.github.io/HintOfGreenCSS/theme.css'); /* Import Hint of Green CSS Theme */
+@import url('https://ctalvio.github.io/Monochromic/bottom-progress_style.css'); /* Use Bottom Progress Bar */
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css'); /* Setup Corner Indicator buttons */
+
+/*Login background*/
+#loginPage {
+  display: grid;
+  background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Login Screen Alignment fixes */
+#loginPage .padded-left.padded-right.padded-bottom-page { margin-top: auto;}
+
+/* Fix Border Radius of Jellyfin Users' Cards */
+.cardPadder.cardPadder-square, .cardContent, .cardImageContainer.coveredImage { border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+
+/* Fix Dropdown buttons */
+.trackSelections .selectContainer .detailTrackSelect { padding: 0.5em 1.9em 0.5em 0.5em; }
+.emby-select[disabled] { padding: 0em 0.5em !important; }
+
+/* Transparent Play button to have fade-in effect on hover */
+/* .listItemImageButton.itemAction.paper-icon-button-light { background: transparent; color: transparent; } */
+
+/* Style Backdrop to make it less blurry */
+.backdropImage {filter: blur(2px) saturate(120%) contrast(120%) brightness(20%);}
+
+/* Mobile fixes */
+.itemBackdrop{height: 15vh;}
+.layout-mobile .itemBackdrop {
+  height: 10vh;
+}
+
+/* Enable Emby Tabs */
+.headerTabs {display:block;}
+.emby-tabs-slider {display:block;font-size: 80%}
