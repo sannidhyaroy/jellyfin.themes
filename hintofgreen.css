@@ -40,3 +40,8 @@
 /*Enlarge Jellyfin logo*/
 .pageTitle { height: 2.5em; }
 .headerTop { padding: 1em 0.5em; }
+
+/* Restore Trailer and Favorite Buttons and more from season section */
+.itemDetailPage .moreFromSeasonSection { display: revert !important }
+.itemDetailPage .btnPlayTrailer { display: revert !important }
+.itemDetailPage .btnUserRating { display: revert !important }
