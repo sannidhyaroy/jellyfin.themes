@@ -35,3 +35,8 @@
 /* Enable Emby Tabs */
 .headerTabs {display:block;}
 .emby-tabs-slider {display:block;font-size: 80%}
+/* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
+
+/*Enlarge Jellyfin logo*/
+.pageTitle { height: 2.5em; }
+.headerTop { padding: 1em 0.5em; }
