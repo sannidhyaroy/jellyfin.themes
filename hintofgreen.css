@@ -39,6 +39,10 @@
 .pageTitle { height: 2.5em; }
 .headerTop { padding: 1em 0.5em; }
 
+/* Restore profile icons */
+.material-icons.person { display: inherit }
+.headerButton.headerButtonRight.headerUserButton.paper-icon-button-light { display: inherit }
+
 /* Restore Trailer and Favorite Buttons and more from season section */
 /* .itemDetailPage .moreFromSeasonSection { display: revert !important; } /* Keep disabled for now as it provides duplicate .emby-scrollbuttons */
 .itemDetailPage .btnPlayTrailer { display: revert !important; }
