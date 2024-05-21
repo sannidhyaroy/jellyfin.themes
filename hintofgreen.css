@@ -48,3 +48,15 @@
 @media all and (min-width:100em) { .listItemImage.listItemImage-large.itemAction.lazy { height: inherit !important; } }
 @media all and (max-width:100em) { .listItemImage.listItemImage-large.itemAction.lazy { height: 13vw !important } }
 @media all and (max-width:64em) { .listItemImage.listItemImage-large.itemAction.lazy { height: 80px !important } }
+
+/* Bring back Login Screen Items */
+#loginPage .sectionTitle, #loginPage h1, #loginPage .checkboxContainer, #loginPage .raised.cancel.block.btnManual.emby-button, #loginPage .raised.cancel.block.btnForgotPassword.emby-button { display: inherit; }
+#loginPage .readOnlyContent, #loginPage form { width: 70%; }
+
+/* Colorize buttons on hover */
+.btnCancel.raised.emby-button:hover { color: red; background: pink; } /* Cancel button on Manual Login Page */
+.btnForgotPassword.raised.emby-button:hover { color: #e27802; background: #fcecdd; } /* Forgot Password button */
+.btnQuick.raised.emby-button:hover { color: #8d48c9; background: #e6d5ff; } /* Quick Connect button */
+
+/* Fix Submit button color on hover */
+#loginPage .button-submit:hover { background: rgba(167, 196, 188, 1) !important; }
