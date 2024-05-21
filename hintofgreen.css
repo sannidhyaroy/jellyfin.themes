@@ -45,3 +45,6 @@
 .itemDetailPage .moreFromSeasonSection { display: revert !important }
 .itemDetailPage .btnPlayTrailer { display: revert !important }
 .itemDetailPage .btnUserRating { display: revert !important }
+
+/* Revert to horizontal scroll mechanism of Item Detail Pages */
+@media all and (min-width:50em) { .homePage .emby-scroller, .itemDetailPage .emby-scroller { margin-right: revert !important; } .homePage .emby-scrollbuttons, .itemDetailPage .emby-scrollbuttons { display: revert !important; } .homePage .itemsContainer, .itemDetailPage .itemsContainer { flex-wrap: revert !important; } }
