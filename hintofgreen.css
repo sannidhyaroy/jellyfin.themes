@@ -28,6 +28,7 @@
 /* Enable Emby Tabs */
 .headerTabs { display:block; }
 .emby-tabs-slider { display:block;font-size: 80% }
+.emby-tab-button.emby-button:hover { color: #a7c4bc!important; } /* Match hover color with rest of theme */
 /* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
 
 /*Enlarge Jellyfin logo*/
