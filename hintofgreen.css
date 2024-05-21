@@ -69,3 +69,6 @@
 
 /* Fix Submit button color on hover */
 #loginPage .button-submit:hover { background: rgba(167, 196, 188, 1) !important; }
+
+/* Revive the "Ends at" info in the player */
+.endsAt, .endsAtText { display: inherit !important }
