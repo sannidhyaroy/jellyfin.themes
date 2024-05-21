@@ -5,6 +5,7 @@
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
 .countIndicator, .fullSyncIndicator, .playedIndicator { background: rgba(47,93,98, 0.9); }
 .countIndicator, .playedIndicator { height: 3em; border-bottom-left-radius: 0.5em !important; border-bottom-right-radius: 0.5em !important; }
+.mediaSourceIndicator { background: rgba(47,93,98,0.7 ); border-radius: 0.5em !important; margin: 0.5em; }
 
 /*Login background*/
 #loginPage { display: grid; background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important; background-position: center; background-size: cover; }
@@ -63,7 +64,7 @@
 #loginPage .readOnlyContent, #loginPage form { width: 70%; }
 
 /* Colorize buttons on hover */
-.btnCancel.raised.emby-button:hover, #btnDeleteImage.raised.emby-button:hover, .btnRevoke.raised.emby-button:hover, .paper-icon-button-light.btnDelete:hover { color: red; background: pink; } /* Cancel, Delete and Revoke buttons */
+.btnCancel.raised.emby-button:hover, #btnDeleteImage.raised.emby-button:hover, .btnRevoke.raised.emby-button:hover, .paper-icon-button-light.btnDelete:hover, .button-delete.raised.emby-button:hover { color: red; background: pink; } /* Cancel, Delete and Revoke buttons */
 .btnForgotPassword.raised.emby-button:hover, #btnResetPassword.raised.emby-button:hover, .button-alt.raised.emby-button:hover { color: #e27802; background: #fcecdd; } /* Forgot/Reset Password, and alt (like help) buttons */
 .btnQuick.raised.emby-button:hover { color: #8d48c9; background: #e6d5ff; } /* Quick Connect button */
 .fab.btnAddProvider.submit.emby-button:hover, .fab#btnAddUser.submit.emby-button:hover, .fab.btnNewKey.submit.emby-button:hover, .fab.btnNewRepository.submit.emby-button:hover { color: #21094e; background: #beaee2; } /* Add buttons */
