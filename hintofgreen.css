@@ -9,7 +9,7 @@
 #loginPage .padded-left.padded-right.padded-bottom-page { margin-top: auto; }
 
 /* Fix Border Radius of Jellyfin Users' Cards */
-.cardPadder.cardPadder-square, .cardContent, .cardImageContainer.coveredImage { border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+#loginPage .cardPadder.cardPadder-square, #loginPage .cardContent, #loginPage .cardImageContainer.coveredImage { border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
 
 /* Fix Dropdown buttons */
 .trackSelections .selectContainer .detailTrackSelect { padding: 0.5em 1.9em 0.5em 0.5em; }
