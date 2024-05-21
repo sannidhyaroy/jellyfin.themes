@@ -54,9 +54,13 @@
 #loginPage .readOnlyContent, #loginPage form { width: 70%; }
 
 /* Colorize buttons on hover */
-.btnCancel.raised.emby-button:hover { color: red; background: pink; } /* Cancel button on Manual Login Page */
-.btnForgotPassword.raised.emby-button:hover { color: #e27802; background: #fcecdd; } /* Forgot Password button */
+.btnCancel.raised.emby-button:hover, #btnDeleteImage.raised.emby-button:hover, .btnRevoke.raised.emby-button:hover, .paper-icon-button-light.btnDelete:hover { color: red; background: pink; } /* Cancel, Delete and Revoke buttons */
+.btnForgotPassword.raised.emby-button:hover, #btnResetPassword.raised.emby-button:hover, .button-alt.raised.emby-button:hover { color: #e27802; background: #fcecdd; } /* Forgot/Reset Password, and alt (like help) buttons */
 .btnQuick.raised.emby-button:hover { color: #8d48c9; background: #e6d5ff; } /* Quick Connect button */
+.fab.btnAddProvider.submit.emby-button:hover, .fab#btnAddUser.submit.emby-button:hover, .fab.btnNewKey.submit.emby-button:hover, .fab.btnNewRepository.submit.emby-button:hover { color: #21094e; background: #beaee2; } /* Add buttons */
+
+/* Colorize Important Alerts */
+.listItemIcon.material-icons.notification_important { color: red; background-color: pink !important; }
 
 /* Fix Submit button color on hover */
 #loginPage .button-submit:hover { background: rgba(167, 196, 188, 1) !important; }
