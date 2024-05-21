@@ -44,3 +44,7 @@
 
 /* Revert Episodes to non-compact form and clamp overview to max. 4 lines */
 .secondary.listItem-overview.listItemBodyText { height: unset !important; display: -webkit-box; -webkit-line-clamp: 4; -moz-line-clamp: 4; -ms-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; -moz-box-orient: vertical; -ms-box-orient: vertical; box-orient: vertical; }
+.listItem-content { height: revert !important }
+@media all and (min-width:100em) { .listItemImage.listItemImage-large.itemAction.lazy { height: inherit !important; } }
+@media all and (max-width:100em) { .listItemImage.listItemImage-large.itemAction.lazy { height: 13vw !important } }
+@media all and (max-width:64em) { .listItemImage.listItemImage-large.itemAction.lazy { height: 80px !important } }
