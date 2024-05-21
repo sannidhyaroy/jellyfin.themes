@@ -1,6 +1,10 @@
 @import url('https://looi-wh.github.io/HintOfGreenCSS/theme.css'); /* Import Hint of Green CSS Theme */
 @import url('https://ctalvio.github.io/Monochromic/bottom-progress_style.css'); /* Use Bottom Progress Bar */
-/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css'); /* Setup Corner Indicator buttons */
+
+/* Watch & Count Indicators look like Bookmark icons */
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
+.countIndicator, .fullSyncIndicator, .playedIndicator { background: rgba(47,93,98, 0.9); }
+.countIndicator, .playedIndicator { height: 3em; border-bottom-left-radius: 0.5em !important; border-bottom-right-radius: 0.5em !important; }
 
 /*Login background*/
 #loginPage { display: grid; background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important; background-position: center; background-size: cover; }
