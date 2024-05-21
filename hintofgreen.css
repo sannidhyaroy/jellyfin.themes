@@ -3,15 +3,10 @@
 /* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css'); /* Setup Corner Indicator buttons */
 
 /*Login background*/
-#loginPage {
-  display: grid;
-  background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important;
-  background-position: center;
-  background-size: cover;
-}
+#loginPage { display: grid; background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important; background-position: center; background-size: cover; }
 
 /* Login Screen Alignment fixes */
-#loginPage .padded-left.padded-right.padded-bottom-page { margin-top: auto;}
+#loginPage .padded-left.padded-right.padded-bottom-page { margin-top: auto; }
 
 /* Fix Border Radius of Jellyfin Users' Cards */
 .cardPadder.cardPadder-square, .cardContent, .cardImageContainer.coveredImage { border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
@@ -27,14 +22,12 @@
 .backdropImage {filter: blur(2px) saturate(120%) contrast(120%) brightness(20%);}
 
 /* Mobile fixes */
-.itemBackdrop{height: 15vh;}
-.layout-mobile .itemBackdrop {
-  height: 10vh;
-}
+.itemBackdrop{ height: 15vh; }
+.layout-mobile .itemBackdrop { height: 10vh; }
 
 /* Enable Emby Tabs */
-.headerTabs {display:block;}
-.emby-tabs-slider {display:block;font-size: 80%}
+.headerTabs { display:block; }
+.emby-tabs-slider { display:block;font-size: 80% }
 /* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
 
 /*Enlarge Jellyfin logo*/
@@ -42,9 +35,12 @@
 .headerTop { padding: 1em 0.5em; }
 
 /* Restore Trailer and Favorite Buttons and more from season section */
-.itemDetailPage .moreFromSeasonSection { display: revert !important }
-.itemDetailPage .btnPlayTrailer { display: revert !important }
-.itemDetailPage .btnUserRating { display: revert !important }
+/* .itemDetailPage .moreFromSeasonSection { display: revert !important; } /* Keep disabled for now as it provides duplicate .emby-scrollbuttons */
+.itemDetailPage .btnPlayTrailer { display: revert !important; }
+.itemDetailPage .btnUserRating { display: revert !important; }
 
 /* Revert to horizontal scroll mechanism of Item Detail Pages */
 @media all and (min-width:50em) { .homePage .emby-scroller, .itemDetailPage .emby-scroller { margin-right: revert !important; } .homePage .emby-scrollbuttons, .itemDetailPage .emby-scrollbuttons { display: revert !important; } .homePage .itemsContainer, .itemDetailPage .itemsContainer { flex-wrap: revert !important; } }
+
+/* Revert Episodes to non-compact form and clamp overview to max. 4 lines */
+.secondary.listItem-overview.listItemBodyText { height: unset !important; display: -webkit-box; -webkit-line-clamp: 4; -moz-line-clamp: 4; -ms-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; -moz-box-orient: vertical; -ms-box-orient: vertical; box-orient: vertical; }
