@@ -113,3 +113,12 @@
 /* Set Backdrop Blur on homepage & library */
 .libraryDocument.withSectionTabs .backdropImage { filter: blur(50px) saturate(200%) contrast(170%) brightness(70%); }
 .backgroundContainer.withBackdrop { background-color: rgba(47,93,98,.5); } /* Green shade over backdrop */
+
+/* Show Cast Image and make it smaller */
+scenesCollapsible, div.personCard>:first-child>:first-child { display: initial; }
+#castContent { max-height: none; }
+#castContent .personCard .cardBox { margin-right: 1.2em; margin-bottom: 0 !important; }
+#castContent .card.overflowPortraitCard { width: 3cm; font-size: 90% !important; }
+
+/* Smaller Similar Content Card */
+#similarCollapsible .card.overflowPortraitCard { width: 4cm; font-size: 90% !important; }
