@@ -39,7 +39,7 @@
 /* Blur Skin Header and increase padding of below content AND/OR use Static Skin Header */
 .section0 { padding-top: 1.5em !important; }
 /* .skinHeader-withBackground.skinHeader-blurred { backdrop-filter: blur(20px) brightness(0.5); border-bottom-left-radius: 3em; border-bottom-right-radius: 3em; } /* Uncomment this line to enable blurring of skin header. Usually used when the line below is commented out */
-.skinHeader { position: static; } /* Comment out to disable Static Skin Header. Usually used with above line commented out */
+.skinHeader { position: absolute; } /* Comment out to disable Static Skin Header. Usually used with above line commented out */
 /* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
 
 /*Enlarge Jellyfin logo*/
@@ -102,3 +102,13 @@
 .mainDetailButtons { align-items: flex-start; }
 .nameContainer a.button-link.itemAction.emby-button { text-align: left; }
 .nameContainer .itemName.infoText { padding-left: 0; }
+
+/* Fix duplicate hover effect on card overlay button icons */
+.cardOverlayButtonIcon:hover { background-color: transparent !important; }
+.material-icons.cardOverlayButtonIcon.cardOverlayButtonIcon-hover.play_arrow:before { font-size: 90px; }
+.cardOverlayContainer>.cardOverlayFab-primary { background-color: transparent; }
+@media (hover: hover) and (pointer: fine) { .paper-icon-button-light:hover:not(:disabled) { background-color: rgba(0,0,0,0.5); } .paper-icon-button-light.cardOverlayFab-primary:hover:not(:disabled) { background-color: transparent; } }
+
+/* Set Backdrop Blur on homepage & library */
+.libraryDocument.withSectionTabs .backdropImage { filter: blur(50px) saturate(200%) contrast(170%) brightness(70%); }
+.backgroundContainer.withBackdrop { background-color: rgba(47,93,98,.5); } /* Green shade over backdrop */
