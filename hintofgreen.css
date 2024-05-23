@@ -5,7 +5,7 @@
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
 .countIndicator, .fullSyncIndicator, .playedIndicator { background: rgba(47,93,98, 0.9); }
 .countIndicator, .playedIndicator { height: 3em; border-bottom-left-radius: 0.5em !important; border-bottom-right-radius: 0.5em !important; }
-.mediaSourceIndicator { background: rgba(47,93,98,0.7 ); border-radius: 0.5em !important; margin: 0.5em; }
+.mediaSourceIndicator { background: rgba(47,93,98,0.7); border-radius: 0.5em !important; margin: 0.5em; }
 
 /*Login background*/
 #loginPage { display: grid; background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important; background-position: center; background-size: cover; }
@@ -35,6 +35,10 @@
 .emby-tabs-slider { display:block;font-size: 80% }
 .emby-tab-button.emby-button:hover { color: #a7c4bc!important; } /* Match hover color with rest of theme */
 /* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
+
+/* Blur Skin Header and increase padding of below content */
+.skinHeader-withBackground.skinHeader-blurred { backdrop-filter: blur(20px) brightness(0.5); border-bottom-left-radius: 3em; border-bottom-right-radius: 3em; }
+.libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; }
 
 /*Enlarge Jellyfin logo*/
 .pageTitle { height: 2.5em; }
@@ -77,3 +81,22 @@
 
 /* Revive the "Ends at" info in the player */
 .endsAt, .endsAtText { display: inherit !important }
+
+/* Improve list item background on hover */
+.listItem:hover { background: #2f5d626e; backdrop-filter: blur(3px); }
+
+/* Improve Dashboard Sidebar colors */
+.css-17c09up.Mui-selected { background-color: #2f5d6280; }
+.css-17c09up.Mui-selected:hover { background-color: #2f5d62b3; }
+
+/* Fix alignment in Quick Connect Page */
+#quickConnectPreferencesPage .padded-left.padded-right.padded-bottom-page { display: flex; justify-content: center; }
+
+/* Revive Item Title */
+#itemDetailPage .itemName.infoText.parentNameLast { display: block; }
+.hide+.detailPageWrapperContainer .itemName { display: revert !important; }
+.itemName { margin: 0 !important }
+.infoWrapper, .mainDetailButtons { height: inherit; }
+.mainDetailButtons { align-items: flex-start; }
+.nameContainer a.button-link.itemAction.emby-button { text-align: left; }
+.nameContainer .itemName.infoText { padding-left: 0; }
