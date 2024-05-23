@@ -57,6 +57,7 @@
 
 /* Revert to horizontal scroll mechanism of Item Detail Pages */
 @media all and (min-width:50em) { .homePage .emby-scroller, .itemDetailPage .emby-scroller { margin-right: revert !important; } .homePage .emby-scrollbuttons, .itemDetailPage .emby-scrollbuttons { display: revert !important; } .homePage .itemsContainer, .itemDetailPage .itemsContainer { flex-wrap: revert !important; } }
+.section0 .itemsContainer { flex-wrap: wrap !important; } /* Keep the Section for Media Categories as the original hint of green theme */
 
 /* Revert Episodes to non-compact form and clamp overview to max. 4 lines */
 .secondary.listItem-overview.listItemBodyText { height: unset !important; display: -webkit-box; -webkit-line-clamp: 4; -moz-line-clamp: 4; -ms-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; -moz-box-orient: vertical; -ms-box-orient: vertical; box-orient: vertical; }
