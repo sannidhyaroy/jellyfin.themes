@@ -82,8 +82,9 @@
 /* Colorize Important Alerts */
 .listItemIcon.material-icons.notification_important { color: red; background-color: pink !important; }
 
-/* Fix Submit button color on hover */
-#loginPage .button-submit:hover { background: rgba(167, 196, 188, 1) !important; }
+/* Fix Login form submit button color on hover */
+#loginPage .button-submit { background: #457056; }
+#loginPage .button-submit:hover { background: #c9e4c5; }
 
 /* Revive the "Ends at" info in the player */
 .endsAt, .endsAtText { display: inherit !important }
@@ -109,19 +110,19 @@
 
 /* Fix duplicate hover effect on card overlay button icons */
 .cardOverlayButtonIcon:hover { background-color: transparent !important; }
-.material-icons.cardOverlayButtonIcon.cardOverlayButtonIcon-hover.play_arrow:before { font-size: 90px; }
+.material-icons.cardOverlayButtonIcon.cardOverlayButtonIcon-hover.play_arrow:before, .material-icons.listItemImageButton-icon.play_arrow:before { font-size: 90px; }
 .cardOverlayContainer>.cardOverlayFab-primary { background-color: transparent; }
-@media (hover: hover) and (pointer: fine) { .paper-icon-button-light:hover:not(:disabled) { background-color: rgba(0,0,0,0.5); } .paper-icon-button-light.cardOverlayFab-primary:hover:not(:disabled) { background-color: transparent; } }
+@media (hover: hover) and (pointer: fine) { .paper-icon-button-light:hover:not(:disabled) { background-color: rgba(0,0,0,0.5); } .paper-icon-button-light.cardOverlayFab-primary:hover:not(:disabled), .paper-icon-button-light.itemAction.listItemImageButton { background-color: transparent; } }
 
 /* Set Backdrop Blur on homepage & library */
 .libraryDocument.withSectionTabs .backdropImage { filter: blur(50px) saturate(200%) contrast(170%) brightness(70%); }
 .backgroundContainer.withBackdrop { background-color: rgba(47,93,98,.5); } /* Green shade over backdrop */
 
-/* Show Cast Image and make it smaller */
+/* Show Cast & Guest Cast Image and make it smaller */
 scenesCollapsible, div.personCard>:first-child>:first-child { display: initial; }
-#castContent { max-height: none; }
-#castContent .personCard .cardBox { margin-right: 1.2em; margin-bottom: 0 !important; }
-#castContent .card.overflowPortraitCard { width: 3cm; font-size: 90% !important; }
+#castContent, #guestCastContent { max-height: none; }
+#castContent .personCard .cardBox, #guestCastContent .personCard .cardBox { margin-right: 1.2em; margin-bottom: 0 !important; }
+#castContent .card.overflowPortraitCard, #guestCastContent .card.overflowPortraitCard { width: 3cm; font-size: 90% !important; }
 
 /* Smaller Similar Content Card */
 #similarCollapsible .card.overflowPortraitCard { width: 4cm; font-size: 90% !important; }
