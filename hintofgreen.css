@@ -15,6 +15,7 @@
 
 /* Fix Border Radius of Jellyfin Users' Cards */
 #loginPage .cardPadder.cardPadder-square, #loginPage .cardContent, #loginPage .cardImageContainer.coveredImage { border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+[dir=ltr] .cardIndicators { right: .3em !important; }
 
 /* Fix Dropdown buttons */
 .trackSelections .selectContainer .detailTrackSelect { padding: 0.5em 1.9em 0.5em 0.5em; }
@@ -50,8 +51,9 @@
 .material-icons.person { display: inherit }
 .headerButton.headerButtonRight.headerUserButton.paper-icon-button-light { display: inherit }
 
-/* Restore Trailer and Favorite Buttons and more from season section */
-/* .itemDetailPage .moreFromSeasonSection { display: revert !important; } /* Keep disabled for now as it provides duplicate .emby-scrollbuttons */
+/* Restore Trailer and Favorite Buttons and smaller 'More from Season' section */
+.itemDetailPage .moreFromSeasonSection:not(.hide) { display: block !important; }
+.moreFromSeasonSection .overflowBackdropCard, .overflowSmallBackdropCard { width: 18vw; } /* Make 'More from Season' section smaller */
 .itemDetailPage .btnPlayTrailer { display: revert !important; }
 .itemDetailPage .btnUserRating { display: revert !important; }
 
