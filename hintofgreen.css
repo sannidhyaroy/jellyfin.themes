@@ -126,3 +126,7 @@ scenesCollapsible, div.personCard>:first-child>:first-child { display: initial; 
 
 /* Smaller Similar Content Card */
 #similarCollapsible .card.overflowPortraitCard { width: 4cm; font-size: 90% !important; }
+
+/* Fix trickplay container UI */
+.sliderBubbleTrack .chapterThumbContainer .chapterThumbTextContainer { border-radius: 0 !important }
+.sliderBubbleTrack .chapterThumbContainer .chapterThumbText { color: #fff; text-align: center; }
