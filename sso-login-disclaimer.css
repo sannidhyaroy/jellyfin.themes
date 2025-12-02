@@ -1,0 +1,12 @@
+<div class="sso-container">
+<div class="or-section">
+    <span class="or-text">OR</span>
+</div>
+<form class="sso-form" action="https://jellyfin.example.com/sso/OID/start/SSO_PROVIDER_NAME">
+  <button class="raised block emby-button sso-button">
+    Sign in with SSO_PROVIDER_NAME
+  </button>
+</form>
+</div>
+
+<!-- INSERT YOUR CUSTOM LOGIN DISCLAIMER BELOW (OPTIONAL) -->
