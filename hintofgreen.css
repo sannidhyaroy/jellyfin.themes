@@ -1,14 +1,32 @@
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/light.css"); /* Import Font Awesome Icons */
 @import url('https://looi-wh.github.io/HintOfGreenCSS/theme.css'); /* Import Hint of Green CSS Theme */
 @import url('https://ctalvio.github.io/Monochromic/bottom-progress_style.css'); /* Use Bottom Progress Bar */
 
-/* Watch & Count Indicators look like Bookmark icons */
+/* Bookmark styled Watch & Count Indicators */
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
 .countIndicator, .fullSyncIndicator, .playedIndicator { background: rgba(47,93,98, 0.9); }
 .countIndicator, .playedIndicator { height: 3em; border-bottom-left-radius: 0.5em !important; border-bottom-right-radius: 0.5em !important; }
 .mediaSourceIndicator { background: rgba(47,93,98,0.7); border-radius: 0.5em !important; margin: 0.5em; }
 
+/* Fix for Font Awesome Icons */
+.checkboxIcon { justify-content: center; } /* Font Awesome breaks checkbox container, so fix it */
+.material-icons.dashboard:before { content: "\f233"; }
+/*.material-icons.folder:before { content: "\f8d9"; } */
+.material-icons.music_video:before { content: "\f8e6"; }
+.material-icons.library_add_check:before { content: "\f00c"; }
+.material-icons.phonelink_lock:before { content: "\f0c1"; }
+[data-id="addtocollection"] > .playlist_add:before { content: "\e4a2"; }
+.material-icons.remove_red_eye:before { content: "\f06e"; }
+.material-icons.text_decrease:before { content: "\f010"; }
+.material-icons.text_increase:before { content: "\f00e"; }
+.material-icons.toc:before { content: "\f03a"; }
+.material-icons.keyboard_backspace:before { content: "\f060"; }
+.material-icons.notification_important:before { content: "\f848"; }
+
+/* Make sure not to enlarge play button when using Font Awesome Icons. */
+
 /*Login background*/
-#loginPage { display: grid; background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.35') !important; background-position: center; background-size: cover; }
+#loginPage { display: grid; background: url('/Branding/Splashscreen?format=png&foregroundLayer=0.36') !important; background-position: center; background-size: cover; }
 
 /* Login Screen Alignment fixes */
 #loginPage .padded-left.padded-right.padded-bottom-page { margin-top: auto; }
@@ -38,9 +56,9 @@
 /* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
 
 /* Blur Skin Header and increase padding of below content AND/OR use Static Skin Header */
-.section0 { padding-top: 1.5em !important; }
+/* .section0 { padding-top: 1.5em !important; } */
 /* .skinHeader-withBackground.skinHeader-blurred { backdrop-filter: blur(20px) brightness(0.5); border-bottom-left-radius: 3em; border-bottom-right-radius: 3em; } /* Uncomment this line to enable blurring of skin header. Usually used when the line below is commented out */
-.skinHeader { position: absolute; } /* Comment out to disable Static Skin Header. Usually used with above line commented out */
+/* .skinHeader { position: absolute; } /* Comment out to disable Static Skin Header. Usually used with above line commented out */
 /* .libraryPage:not(.noSecondaryNavPage) { padding-top: 10em !important; } */
 
 /*Enlarge Jellyfin logo*/
@@ -58,7 +76,8 @@
 .itemDetailPage .btnUserRating { display: revert !important; }
 
 /* Revert to horizontal scroll mechanism of Item Detail Pages */
-@media all and (min-width:50em) { .homePage .emby-scroller, .itemDetailPage .emby-scroller { margin-right: revert !important; } .homePage .emby-scrollbuttons, .itemDetailPage .emby-scrollbuttons { display: revert !important; } .homePage .itemsContainer, .itemDetailPage .itemsContainer { flex-wrap: revert !important; } }
+@media all and (min-width:50em) { .homePage .emby-scroller, .itemDetailPage .emby-scroller { margin-right: revert !important; } .homePage .emby-scrollbuttons, .itemDetailPage .emby-scrollbuttons { display: revert !important; } }
+/* .homePage .itemsContainer, .itemDetailPage .itemsContainer { flex-wrap: revert !important; } */
 .section0 .itemsContainer { flex-wrap: wrap !important; } /* Keep the Section for Media Categories as the original hint of green theme */
 
 /* Revert Episodes to non-compact form and clamp overview to max. 4 lines */
@@ -75,7 +94,7 @@
 
 /* Colorize buttons on hover */
 .btnCancel.raised.emby-button:hover, #btnDeleteImage.raised.emby-button:hover, .btnRevoke.raised.emby-button:hover, .paper-icon-button-light.btnDelete:hover, .button-delete.raised.emby-button:hover { color: red; background: pink; } /* Cancel, Delete and Revoke buttons */
-.btnForgotPassword.raised.emby-button:hover, #btnResetPassword.raised.emby-button:hover, .button-alt.raised.emby-button:hover { color: #e27802; background: #fcecdd; } /* Forgot/Reset Password, and alt (like help) buttons */
+.btnForgotPassword.raised.emby-button:hover, #btnResetPassword.raised.emby-button:hover, .button-alt.raised.emby-button:hover, .btnHide.upNextDialog-button.emby-button:hover { color: #e27802; background: #fcecdd; } /* Forgot/Reset Password, and alt (like help) buttons */
 .btnQuick.raised.emby-button:hover { color: #8d48c9; background: #e6d5ff; } /* Quick Connect button */
 .fab.btnAddProvider.submit.emby-button:hover, .fab#btnAddUser.submit.emby-button:hover, .fab.btnNewKey.submit.emby-button:hover, .fab.btnNewRepository.submit.emby-button:hover, .fab.btnAddTrigger.submit.emby-button:hover { color: #21094e; background: #beaee2; } /* Add buttons */
 
@@ -83,8 +102,8 @@
 .listItemIcon.material-icons.notification_important { color: red; background-color: pink !important; }
 
 /* Fix Login form submit button color on hover */
-#loginPage .button-submit { background: #457056; }
-#loginPage .button-submit:hover { background: #c9e4c5; }
+#loginPage .button-submit { background: #B2C9AB; color: #000; }
+#loginPage .button-submit:hover { background: #c9e4c5; color: #2f5d62; }
 
 /* Revive the "Ends at" info in the player */
 .endsAt, .endsAtText { display: inherit !important }
@@ -103,14 +122,14 @@
 #itemDetailPage .itemName.infoText.parentNameLast { display: block; }
 .hide+.detailPageWrapperContainer .itemName { display: revert !important; }
 .itemName { margin: 0 !important }
-.infoWrapper, .mainDetailButtons { height: inherit; }
+.infoWrapper, .mainDetailButtons { height: 1em; }
 .mainDetailButtons { align-items: flex-start; }
 .nameContainer a.button-link.itemAction.emby-button { text-align: left; }
 .nameContainer .itemName.infoText { padding-left: 0; }
 
 /* Fix duplicate hover effect on card overlay button icons */
 .cardOverlayButtonIcon:hover { background-color: transparent !important; }
-.material-icons.cardOverlayButtonIcon.cardOverlayButtonIcon-hover.play_arrow:before, .material-icons.listItemImageButton-icon.play_arrow:before { font-size: 90px; }
+/* .material-icons.cardOverlayButtonIcon.cardOverlayButtonIcon-hover.play_arrow:before, .material-icons.listItemImageButton-icon.play_arrow:before { font-size: 90px; } /* Enlarge play button */
 .cardOverlayContainer>.cardOverlayFab-primary { background-color: transparent; }
 @media (hover: hover) and (pointer: fine) { .paper-icon-button-light:hover:not(:disabled) { background-color: rgba(0,0,0,0.5); } .paper-icon-button-light.cardOverlayFab-primary:hover:not(:disabled), .paper-icon-button-light.itemAction.listItemImageButton { background-color: transparent; } }
 
@@ -127,6 +146,127 @@ scenesCollapsible, div.personCard>:first-child>:first-child { display: initial; 
 /* Smaller Similar Content Card */
 #similarCollapsible .card.overflowPortraitCard { width: 4cm; font-size: 90% !important; }
 
-/* Fix trickplay container UI */
+/* Fix trickplay previews container UI */
 .sliderBubbleTrack .chapterThumbContainer .chapterThumbTextContainer { border-radius: 0 !important }
 .sliderBubbleTrack .chapterThumbContainer .chapterThumbText { color: #fff; text-align: center; }
+
+/* Improve Tagline styling */
+.tagline { font-weight: 600; opacity: 0.8; font-style: italic; font-size: 1.3em; }
+
+/* Fix image repeat in 'Edit Images' Container */
+:not(.detailPageSecondaryContainer)>.card:not(.overflowSquareCard) .cardImageContainer::before { background: inherit; }
+
+/* Improve Jellyfin Menu */
+.mainDrawer, .drawer-open { background-color: #0d7377; }
+.navMenuOption:hover { background: #2f5d626e; backdrop-filter: blur(3px); }
+.navMenuOption-selected { background: #33333300 !important;}
+
+/* Fix Layout overlap of Content Descriptions */
+/* .infoWrapper { display: table } .mainDetailButtons { height: 100% } /* BREAKS TITLE OVERFLOW */
+.detailPageSecondaryContainer { padding-top: 2.5em; }
+
+/* ALTERNATIVE Emby Tabs */
+.headerTabs.sectionTabs {display: flex; justify-content: center; align-items: center; height: 3em; overflow: hidden; margin: 0 auto; padding-block: 1em; }
+.tabs-viewmenubar.emby-tabs.focusable { display: flex; border-radius: 100em; background: rgba(35, 35, 35, 0.5); align-items: center; height: inherit; backdrop-filter: blur(50px); }
+/* :not(.noHeaderRight, .osdHeader) > .headerTop { backdrop-filter: blur(10px) } */
+.libraryPage:not(.noSecondaryNavPage) { padding-top: 9em!important; }
+.emby-tab-button-active { background-color: rgb(201 228 197 / 15%); border-radius: 10em; padding-block: 0.85em; }
+.emby-tabs-slider { padding-inline: 0.4em }
+/*ALTERNATE EMBY TABS POSITION TOP*/
+.libraryPage:not(.noSecondaryNavPage) { padding-top: 5em!important; }
+.headerTabs.sectionTabs { margin-top: -4.7rem; }
+.section0 { padding-top: 3em !important; } 
+
+/* Customize Skip Intro Button */
+#skipIntro .emby-button { border-radius: 0.7em; background-color: rgb(47 93 98 / 30%); box-shadow: none; }
+#skipIntro .emby-button:hover { cursor: none; color: #2f5d62; text-shadow: none; background-color: rgb(201 228 197 / 95%); box-shadow: none; }
+.upNextDialog-button.emby-button { cursor: none; }
+#skipIntro .emby-button:focus:not(:focus-visible) { background: rgb(47 93 98 / 20%); box-shadow: none; }
+
+
+/* Align Video, Audio and Sub Selection dropdown */
+.trackSelections .selectContainer .selectArrowContainer .selectArrow { height: 1.3em; vertical-align: -webkit-baseline-middle; }
+.trackSelections .selectContainer .detailTrackSelect { padding: 0.5em 2.1em 0.5em 0.5em; }
+
+/* Add Styling to Custom Links in Description */
+.contentlink { padding: 0.2em 0.6em; }
+
+/* Dialog Box Tweaks */
+.dialogBackdropOpened { opacity: 0; } /* Disable shade when dialog opens */
+.dialog { background-color: rgb(13 115 119 / 40%); backdrop-filter: blur(50px); } /* Blur dialog background */
+
+/* Improve Selection Text */
+#loginPage .inputLabelFocused, .selectLabelFocused, .textareaLabelFocused { color: #c9e4c5; }
+
+/* Move Up Next Container up */
+/* .upNextContainer { top: 0; bottom: auto; }
+[dir=ltr] .upNextContainer { margin: 7em 2 em 0 0; } */
+
+/* Hide items with class name `hide`. THIS SHOULD BE AT THE END OF CSS */
+[dir=ltr] .hide { display: none !important; }
+
+/* Circular Cast and Guest Cast */
+.personCard .cardScalable { display: flex !important; width: 2.7cm; height: 2.7cm; background-position: center; background-size: cover; border-radius: 50%; overflow: hidden; border-style: groove; border-color: #c9e4c5; border-width: thick; }
+.personCard .cardContent.cardImageContainer { background-position-y: top }
+.personCard .cardOverlayButton-br { display: none !important }
+#castContent, #guestCastContent { gap: 1em }
+
+/* OPTIONAL FOR CERTAIN SERVERS - ENABLE AS NEEDED */
+/* .section6 .cardPadder.cardPadder-overflowBackdrop { background: rgba(222, 184, 135, 0.4); } /* Live TV Customization */
+
+/* SSO Login */
+.sso-form {
+  width: 100% !important;
+}
+.raised.emby-button.sso-button {
+  background: #204437 !important;
+  color: #fff !important;
+}
+.raised.emby-button.sso-button:hover {
+  background: #c9e4c5 !important;
+  color: #2f5d62 !important;
+}
+.loginDisclaimer {
+  width: 100% !important;
+}
+.disclaimerContainer {
+  display: block;
+}
+.or-text {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: #444 !important;
+  position: relative !important;
+  display: inline-block !important;
+  padding: 0 20px !important;
+  background-color: #fff !important;
+  z-index: 1 !important;
+}
+  .or-section {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+}
+.or-section::before,
+.or-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 2px;
+  background-color: #ddd;
+  z-index: 0;
+}
+.or-section::before {
+  left: 0;
+}
+.or-section::after {
+  right: 0;
+}
+.sso-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
