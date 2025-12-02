@@ -33,3 +33,7 @@ A Collection of custom Jellyfin themes using CSS
 #### Client-side Installation:
 - Paste one of the CSS codes above into `Menu > Display > Custom CSS code`.
 - Ensure `Disable server-provided custom CSS code` is checked to above clashing with the Server's Custom CSS (if available).
+- If you need to show an SSO Button on the login page, either add the contents of `sso-login-disclaimer.css` file to the `Menu > Display > Login Disclaimer` input field or the following import statement:
+  ```css
+  @import url('https://sannidhyaroy.github.io/jellyfin.themes/sso-login-disclaimer.css');
+  ```
